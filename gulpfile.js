@@ -1,4 +1,8 @@
-var themeName = 'rt-uno'; // Edit according to your theme slug/name if needed.
+/**
+ * Edit themeName to your needs
+ * E.G. if your website is http://localhost/my-site, edit themeName to be equal to 'my-site'
+ */
+var themeName = 'wp-boilerplate'; 
 
 var gulp = require( 'gulp' );
 var rename = require( 'gulp-rename' );
