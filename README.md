@@ -1,5 +1,5 @@
 # wp-boilerplate
-Boilerplate theme for WordPress
+Boilerplate "bootstrap ready" theme for WordPress
 
 1. Clone this repository
 
