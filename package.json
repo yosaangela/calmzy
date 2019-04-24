@@ -1,0 +1,50 @@
+{
+  "name": "rt-uno",
+  "version": "1.0.0",
+  "description": "Simple WordPress theme for reastaurants",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WappstarsBV/rt-uno.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Restaurant",
+    "simple"
+  ],
+  "author": "Petar Ratkovic",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/WappstarsBV/rt-uno/issues"
+  },
+  "homepage": "https://github.com/WappstarsBV/rt-uno#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babelify": "^10.0.0",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.4",
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
