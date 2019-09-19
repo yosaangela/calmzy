@@ -1,3 +1,3 @@
-import App from './modules/app.js';
+import { headerClassOnScroll } from './modules/functions.js';
 
-const app = new App();
+headerClassOnScroll('.site-header', 'site-header--small');

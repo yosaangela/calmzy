@@ -1,0 +1,16 @@
+//Shadows
+$shadow-sm: 0 1px 3px rgba($shadow-color, 0.12),
+0 1px 2px rgba($shadow-color, 0.24);
+$shadow-md: 0 3px 6px rgba($shadow-color, 0.16),
+0 3px 6px rgba($shadow-color, 0.23);
+$shadow-lg: 0 14px 28px rgba($shadow-color, 0.25),
+0 10px 10px rgba($shadow-color, 0.22);
+$shadow-xl: 0 19px 38px rgba($shadow-color, 0.30),
+0 15px 12px rgba($shadow-color, 0.22);
+
+//Transitions
+$trans150: all 0.15s linear;
+$trans200: all 0.2s linear;
+$trans250: all 0.25s linear;
+$trans300: all 0.3s linear;
+$trans350: all 0.35s linear;
