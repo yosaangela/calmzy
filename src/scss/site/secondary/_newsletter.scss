@@ -1,0 +1,97 @@
+.newsletter {
+    width: 100%;
+    margin-bottom: 8rem;
+
+    .newsletter-content {
+        text-align: center;
+    }
+
+    h2 {
+        @include font-size(2.5);
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        background-color: $white;
+        height: 74px;
+        border-radius: 37px;
+        padding: 6px;
+        box-shadow: $shadow-xl;
+
+        input {
+            float: left;
+
+            &:first-of-type {
+                border-right: 1px solid $color__background-button !important;
+            }
+
+            &::placeholder {
+                font-style: italic;
+                color: $light-blue
+            }
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 40%;
+            height: 62px;
+            border: none;
+            padding: 0 0 0 2rem;
+            background: transparent;
+            box-shadow: none;
+
+        }
+
+        input[type="text"] {
+            border-top-left-radius: 31px;
+            border-bottom-left-radius: 31px;
+        }
+
+        input[type="submit"] {
+            width: 20%;
+            height: 62px;
+            border: none;
+            border-radius: 31px;
+            color: $white;
+            background: $dark-blue;
+            text-align: center;
+            @include font-size(1);
+            transition: $trans250;
+
+            &:hover {
+                background-color: darken($dark-blue, 10%);
+            }
+        }
+
+        &.mc4wp-form-error {
+            input:not([type="submit"]) {
+                color: tomato;
+
+                &::placeholder {
+                    color: tomato;
+                }
+            }
+        }
+
+        .mc4wp-form-fields {
+            width: 100%;
+            @include clearfix();
+        }
+
+        .mc4wp-response {
+            width: 100%;
+            margin-top: 2rem;
+            @include clearfix();
+            text-align: center;
+
+            .mc4wp-error {
+                color: tomato;
+            }
+
+            .mc4wp-success {
+                color: green;
+            }
+        }
+    }
+}

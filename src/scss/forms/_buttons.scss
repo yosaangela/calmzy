@@ -1,22 +1,115 @@
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6em 1em .4em;
+.big-button {
+    @include big-button();
+    transition: $trans250;
 
-	&:hover {
-		border-color: $color__border-button-hover;
-	}
+    &:hover {
+        text-decoration: none;
+    }
 
-	&:active,
-	&:focus {
-		border-color: $color__border-button-focus;
-	}
+    &.white {
+        background-color: $white;
+        color: $dark-blue;
+
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+        }
+    }
+
+    &.light-blue {
+        background-color: $light-blue;
+        color: $dark-blue;
+
+        &:hover {
+            background-color: darken($light-blue, 10%);
+            color: darken($dark-blue, 10%);
+        }
+    }
+
+    &.light-blue-bordered {
+        border: 1px solid $light-blue;
+        color: $light-blue;
+
+        &:hover {
+            border: 1px solid darken($light-blue, 10%);
+            color: darken($light-blue, 10%);
+        }
+    }
+
+    &.dark-blue {
+        background-color: $dark-blue;
+        color: $white;
+
+        &:hover {
+            background-color: darken($dark-blue, 10%);
+        }
+    }
+
+    &.dark-blue-bordered {
+        border: 1px solid $dark-blue;
+        color: $dark-blue;
+
+        &:hover {
+            border: 1px solid darken($dark-blue, 10%);
+            color: darken($dark-blue, 10%);
+        }
+    }
+}
+
+.medium-button {
+    @include medium-button();
+    transition: $trans250;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.white {
+        background-color: $white;
+        color: $dark-blue;
+
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+        }
+    }
+
+    &.light-blue {
+        background-color: $light-blue;
+        color: $dark-blue;
+
+        &:hover {
+            background-color: darken($light-blue, 10%);
+            color: darken($dark-blue, 10%);
+        }
+    }
+
+    &.light-blue-bordered {
+        border: 1px solid $light-blue;
+        color: $light-blue;
+
+        &:hover {
+            border: 1px solid darken($light-blue, 10%);
+            color: darken($light-blue, 10%);
+        }
+    }
+
+    &.dark-blue {
+        background-color: $dark-blue;
+        color: $white;
+
+        &:hover {
+            background-color: darken($dark-blue, 10%);
+        }
+    }
+
+    &.dark-blue-bordered {
+        border: 1px solid $dark-blue;
+        color: $dark-blue;
+
+        &:hover {
+            border: 1px solid darken($dark-blue, 10%);
+            color: darken($dark-blue, 10%);
+        }
+    }
 }

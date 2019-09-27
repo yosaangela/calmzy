@@ -1,29 +1,68 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+    font-size: ($sizeValue * 16) * 1px;
+    font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Clearfix
 @mixin clearfix() {
-	content: "";
-	display: table;
-	table-layout: fixed;
+    content: "";
+    display: table;
+    table-layout: fixed;
 }
 
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
-	clear: both;
+    clear: both;
 }
 
 // Column width with margin
 @mixin column-width($numberColumns: 3) {
-	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+    width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
+}
+
+/// Background image
+/// @params - $x, $y, $size, $repeat
+/// USE @include background(center, center, cover, no-repeat);
+@mixin background($x, $y, $size, $repeat) {
+    background-position: $x $y;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+/// Absolute positioning
+/// @params TRBL - $top, $right, $left, $bottom
+/// USE @include absolute(0, 0, 0, 0);
+@mixin absolute($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin big-button() {
+    display: inline-block;
+    @include font-size(1.3);
+    height: 50px;
+    border-radius: $bdr25;
+    padding: 1rem 3rem;
+    text-align: center;
+    line-height: .85;
+}
+
+@mixin medium-button() {
+    display: inline-block;
+    height: 50px;
+    border-radius: $bdr25;
+    padding: 1rem 2rem;
+    text-align: center;
+    line-height: 1;
 }

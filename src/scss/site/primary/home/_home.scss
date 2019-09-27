@@ -1,0 +1,219 @@
+.home--hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1400px;
+    width: 100%;
+    @include background(0, 0, 50%, no-repeat);
+    z-index: -1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: url(../../images/hero-bg.svg);
+        @include background(bottom, right, cover, no-repeat);
+    }
+}
+
+.home--hero-section {
+    padding: 10rem 0;
+
+    .hero-section--content {
+        padding: 0;
+    }
+
+    h1 {
+        @include font-size(5.5);
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        @include font-size(1.5);
+    }
+
+    a:first-of-type {
+        margin-right: 2rem;
+    }
+}
+
+.section-content {
+    background-color: $white;
+    padding: 3rem;
+    border-radius: $bdr4;
+    box-shadow: $shadow-xl;
+}
+
+.section-content--content,
+.section-content--image {
+    padding: 0;
+}
+
+.home--benefits-of-blanket {
+    width: 100%;
+    margin-bottom: 6rem;
+
+    h2 {
+        @include font-size(2.5);
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        margin: 0 0 2rem 0;
+        padding-left: 17px;
+        list-style-type: none;
+
+        li {
+            position: relative;
+            margin-bottom: .3rem;
+            padding-bottom: .3rem;
+
+            &:last-of-type {
+                padding: 0;
+                margin: 0;
+            }
+
+            &::before {
+                position: absolute;
+                top: 11px;
+                left: -17px;
+                display: inline-block;
+                content: '';
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: $light-blue;
+            }
+        }
+    }
+
+    p.buttons {
+        margin: 0;
+
+        a:first-of-type {
+            margin-right: 2rem;
+        }
+    }
+
+    .section-content {
+        position: relative;
+        background-color: transparent;
+        @include gradient-x(rgba($white, .9), $white, 0%, 40%);
+
+        &::after {
+            display: inline-block;
+            content: '';
+            @include absolute(-100px, -200px, -100px, 50%);
+            background-image: url(../../images/benefits-shape.svg);
+            @include background(50%, 50%, contain, no-repeat);
+            z-index: -1;
+        }
+    }
+
+    .section-content--image {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.home--choose-weight {
+    width: 100%;
+    margin-bottom: 6rem;
+    padding: 4rem;
+
+    .choose-weight--content {
+        position: relative;
+        padding: 3rem
+    }
+
+    img {
+        @include absolute(0, auto, auto, -300px);
+        transition: left 1s ease-in-out, opacity 1s ease-in-out;
+        opacity: 0;
+
+        &.look-at-me {
+            left: -200px;
+            opacity: 1;
+        }
+
+    }
+
+    h2 {
+        @include font-size(2.5);
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    p.buttons {
+        a:first-of-type {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.home--reviews {
+    width: 100%;
+    margin-bottom: 8rem;
+
+    h2 {
+        @include font-size(2.5);
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        @include font-size(1.3);
+    }
+
+    .section-content--review {
+        position: relative;
+        font-style: italic;
+        z-index: 2;
+    }
+
+    p {
+        &.name {
+            font-weight: 600;
+        }
+    }
+
+    .dots-buttons {
+        @include clearfix();
+    }
+
+    .leave-review {
+        display: inline-block;
+        @include absolute(auto, 1.5rem, 1.5rem, auto);
+    }
+
+    .section-content {
+        padding-bottom: 4rem;
+        position: relative;
+        @include background(120%, 30%, 60%, no-repeat);
+
+        &::before {
+            display: inline-block;
+            content: '';
+            @include absolute(0, 0, 0, 0);
+            background-image: url(../../images/reviews-cover.svg);
+            @include background(center, left, cover, no-repeat);
+        }
+
+        &::after {
+            display: inline-block;
+            content: '';
+            @include absolute(-100px, 50%, -100px, -200px);
+            background-image: url(../../images/testimonials.svg);
+            @include background(50%, 50%, contain, no-repeat);
+            z-index: -1;
+        }
+    }
+}

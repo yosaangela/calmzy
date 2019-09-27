@@ -6,14 +6,14 @@ header.site-header {
     justify-content: space-between;
     padding: 1rem 2rem;
     box-shadow: $shadow-md;
-    transition: $trans150;
+    transition: $trans250;
 
     div.logo {
         margin-right: auto;
 
         img.custom-logo {
             width: 200px;
-            transition: $trans150;
+            transition: $trans250;
         }
     }
 
@@ -23,7 +23,7 @@ header.site-header {
         color: $black;
         margin-left: 1rem;
         text-transform: uppercase;
-        transition: $trans150;
+        transition: $trans250;
 
         &::before {
             position: absolute;

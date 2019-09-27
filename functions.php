@@ -46,6 +46,8 @@ if (!function_exists('rt_uno_setup')):
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
             'primary' => esc_html__('Primary', 'rt-uno'),
+            'footer' => esc_html__('Footer', 'rt-uno'),
+            'legals' => esc_html__('Legals', 'rt-uno'),
         ));
 
         /*

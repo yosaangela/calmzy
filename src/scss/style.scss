@@ -21,12 +21,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /*
+* @import fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&display=swap&subset=latin-ext');
+
+/*
 * OVERRIDES
 */
 @import "overrides";
 
 // NPM packages /////////////////////////////////////////////////////////////////
 @import 'bootstrap';
+@import 'swiper';
 // NPM packages END /////////////////////////////////////////////////////////////
 
 

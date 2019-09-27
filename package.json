@@ -46,5 +46,9 @@
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "dependencies": {
+    "swiper": "^5.0.3",
+    "waypoints": "^4.0.1"
   }
 }

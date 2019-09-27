@@ -1,3 +1,15 @@
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1540px) !default;
+
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px) !default;
+
 //Shadows
 $shadow-sm: 0 1px 3px rgba($shadow-color, 0.12),
 0 1px 2px rgba($shadow-color, 0.24);
@@ -9,8 +21,15 @@ $shadow-xl: 0 19px 38px rgba($shadow-color, 0.30),
 0 15px 12px rgba($shadow-color, 0.22);
 
 //Transitions
-$trans150: all 0.15s linear;
-$trans200: all 0.2s linear;
-$trans250: all 0.25s linear;
-$trans300: all 0.3s linear;
-$trans350: all 0.35s linear;
+$trans150: all 0.15s ease-in-out;
+$trans200: all 0.2s ease-in-out;
+$trans250: all 0.25s ease-in-out;
+$trans300: all 0.3s ease-in-out;
+$trans350: all 0.35s ease-in-out;
+$trans400: all 0.4s ease-in-out;
+$trans450: all 0.45s ease-in-out;
+$trans500: all 0.5s ease-in-out;
+
+//Border radius
+$bdr4: 4px;
+$bdr25: 25px;
